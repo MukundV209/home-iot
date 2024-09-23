@@ -1,5 +1,0 @@
-DEVICE_ID = "Device-id"
-CLOUD_PASSWORD = "ClD-PWD"
-WIFI_SSID = "SSID"
-WIFI_PASSWORD = "PWD"
-GITHUB_URL = "https://raw.githubusercontent.com/MukundV209/home-iot/refs/heads/master/actions.py?token=GHSAT0AAAAAACX4EYEQQ6FOA4AWGIMROLHIZXRAFNA"
