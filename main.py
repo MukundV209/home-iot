@@ -45,15 +45,9 @@ def run_action_file():
     except Exception as e:
         print('Error running action.py:', e)
 
-# Replace with your Wi-Fi credentials
-SSID = 'your_ssid'
-PASSWORD = 'your_password'
-
-# Replace with the direct link to your action.py file on GitHub
-GITHUB_URL = 'https://raw.githubusercontent.com/username/repository/branch/path/to/action.py'
 
 # Main execution
-connect_wifi(SSID, PASSWORD)
+connect_wifi(WIFI_SSID, WIFI_PASSWORD)
 delete_action_file()
 download_action_file(GITHUB_URL)
 run_action_file()
