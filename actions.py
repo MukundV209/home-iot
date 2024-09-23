@@ -2,7 +2,7 @@ from machine import Pin
 import time
 import network
 from arduino_iot_cloud import ArduinoCloudClient
-from secrets import *
+from creds import *
 
 
 led = Pin(2, Pin.OUT)

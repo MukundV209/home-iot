@@ -2,6 +2,7 @@ import os
 import network
 import urequests
 import ubinascii
+from creds import *
 
 # WiFi connection function
 def connect_wifi(ssid, password):
