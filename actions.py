@@ -17,18 +17,23 @@ r4.value(1)
 
 def led_stat(client, value):
     led.value(value)
+    print("LED", value)
 
 def r1_stat(client, value):
     r1.value(not value)
+    print("R1", value)
 
 def r2_stat(client, value):
     r2.value(not value)
+    print("R2", value)
 
 def r3_stat(client, value):
     r3.value(not value)
+    print("R3", value)
 
 def r4_stat(client, value):
     r4.value(not value)
+    print("R4", value)
 
 def wifi_connect():
     wlan = network.WLAN(network.STA_IF)
@@ -37,7 +42,7 @@ def wifi_connect():
     while not wlan.isconnected():
         print("Trying to connect....")
         time.sleep_ms(500)
-    print(f"WiFi Connected {wlan.ifconfig()}")
+    print(f"WiFi Connected {wlan.ifconfig()[0]}")
 
 wifi_connect()
     
